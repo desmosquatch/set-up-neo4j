@@ -1,0 +1,13 @@
+name: Set up Neo4j for testing
+description: Starts Neo4j with authentication disabled
+branding:
+  icon: database
+  color: green
+inputs:
+  tag:
+    description: Neo4j tag from Docker Hub
+    required: false
+    default: latest
+runs:
+  using: docker
+  image: Dockerfile
